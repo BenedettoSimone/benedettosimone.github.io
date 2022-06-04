@@ -369,3 +369,40 @@ body {
   padding: 0 90px;
 }
 
+#projects #projects-list{
+  max-width: 1680px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  padding: 50px;
+}
+
+
+/* single card */
+#projects #projects-list .card{
+  border-radius: 11px;
+  border: 1px solid #eaeaea;
+  box-shadow: 0 .5rem 1.2rem rgba(0,0,0,.2);
+  padding: 20px;
+  display: flex;
+}
+#projects #projects-list .card .left-card{
+  width: 280px;
+  height: 168px;
+  background-color: red;
+  padding: 3px;
+  margin-right: 27px;
+  border-radius: 5px;
+}
+
+#projects #projects-list .card .left-card img{
+  width: 100%;
+}
+
+#projects #projects-list .card .right-card .topic{
+  color: var(--primary-color);
+}
+
+
+
+
