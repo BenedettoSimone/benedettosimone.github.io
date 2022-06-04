@@ -151,12 +151,12 @@ body {
   }
 }
 
-#hero .container{
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  justify-content: center;
+@media screen and (max-width: 744px){
+  #hero {
+    flex-direction: column-reverse;
+  }
 }
+
 
 #hero h1 {
   margin: 0;
