@@ -22,24 +22,36 @@
   <!-- Social icon -->
   <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
 </head>
 
 <body id="body" class="light-mode">
 
-<!-- TopNav section -->
-<div class="topnav semi-bold" id="myTopnav">
-  <a href="#home" class="active">BS.</a>
-  <div class="right">
-    <a href="#news">About</a>
-    <a href="#contact">Resume</a>
-    <a href="#about">Projects</a>
-    <a id="about-button" href="#about">Let's talk</a>
-  </div>
-    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-      <i class="fa fa-bars"></i>
-    </a>
-</div>
 
+<div class="header">
+  <div class="navbar">
+    <div class="navbar__wrapper">
+      <nav class="navbar__menu"><a class="navbar__brand" href="#">BS.</a>
+        <div id="nav-icon3"><span></span><span></span><span></span><span></span></div>
+        <ul class="navbar__nav semi-bold">
+          <li class="navbar__link after-transform"><a href="#">About</a></li>
+          <li class="navbar__link after-transform"><a href="#">Resume</a></li>
+          <li class="navbar__link after-transform"><a href="#">Projects</a></li>
+          <li class="navbar__link after-transform"><a id="about-button" href="#">Let's Talk</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+  <div class="navbar-responsive">
+    <ul class="navbar-responsive__nav semi-bold">
+      <li class="navbar-responsive__link after-transform"><a href="#">About</a></li>
+      <li class="navbar-responsive__link after-transform"><a href="#">Resume</a></li>
+      <li class="navbar-responsive__link after-transform"><a href="#">Projects</a></li>
+      <li class="navbar-responsive__link after-transform"><a id="about-button-responsive" href="#">Let's Talk</a></li>
+    </ul>
+  </div>
+</div>
 
 <!-- Hero section -->
 <section id="hero">
@@ -54,21 +66,41 @@
     </div>
   </div>
   <div class="right-container">
-    <img style="width: 470px"src="Schermata%202022-06-03%20alle%2022.03.43.png">
+   <img style="width: 270px" src="Schermata%202022-06-03%20alle%2022.03.43.png">
   </div>
-</section><!-- End Hero -->
+</section>
 
 </body>
+
 <script>
-  function myFunction() {
-    var x = document.getElementById("myTopnav");
-    if (x.className === "topnav") {
-      x.className += " responsive";
+
+  $(document).ready(function(){
+  var state = false,
+          links = $('.navbar-responsive__link')
+  $('#nav-icon3').click(function(){
+    $(this).toggleClass('open');
+    if(!state) {
+      $('.navbar-responsive').css("transform", "translate3d(0,0,0)")
+      state = true
     } else {
-      x.className = "topnav";
+      $('.navbar-responsive').css("transform", "translate3d(-100%,0,0)")
+      state = false
     }
-  }
-</script>
+
+  })
+  $.each(links, function(index,value){
+    value.addEventListener("click",function(){
+      if(!state) {
+        $('.navbar-responsive').css("transform", "translate3d(0,0,0)")
+        state = true
+      } else {
+        $('.navbar-responsive').css("transform", "translate3d(-100%,0,0)")
+        state = false
+      }
+      $('#nav-icon3').removeClass('open')
+    })
+  })
+})</script>
 
 <!-- JS File to animate words typed -->
 <script src="assets/vendor/typed.js/typed.min.js"></script>
