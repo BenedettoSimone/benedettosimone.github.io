@@ -274,7 +274,7 @@ body {
 --------------------------------------------------------------*/
 #hero {
   max-width: 1680px;
-  height: calc(100vh - 132px);
+  height: calc(100vh - 260px);
   position: relative;
   display: flex;
   justify-content: space-between;
@@ -285,24 +285,32 @@ body {
 }
 
 
-
 @media screen and (max-width: 744px){
   #hero {
     flex-direction: column-reverse;
+    text-align: center;
   }
 }
 
 
-#hero h1 {
+#hero .name, #hero .hello {
   margin: 0;
-  font-size: 64px;
   color: var(--heading);
+}
+
+#hero .name{
+  font-size: 64px;
+}
+
+
+#hero .hello{
+  font-size: 26px;
 }
 
 #hero p {
   color: var(--heading);
   margin: 15px 0 0 0;
-  font-size: 26px;
+  font-size: 30px;
 }
 
 #hero p span {
@@ -316,33 +324,48 @@ body {
 
 #hero .social-links a {
   font-size: 24px;
-  display: inline-block;
-  color: var(--heading);
-  line-height: 1;
+  width: 27px;
+  height: 27px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
   margin-right: 20px;
   transition: 0.3s;
   background: var(--secondary-color);
   border-radius: 30px;
-  padding: 3px;
+  padding: 6px;
+  text-decoration: none;
 }
 
 #hero .social-links a:hover {
-  color: var(--primary-color);
+  background: var(--primary-color);
+  box-shadow: 0 0.5em 0.5em -0.4em var(--primary-color);
+  transform: translateY(-0.25em);
 }
 
 @media (max-width: 992px) {
-  #hero {
-    text-align: center;
-  }
-
   #hero h1 {
     font-size: 32px;
-    line-height: 36px;
   }
 
   #hero p {
     margin-top: 10px;
     font-size: 20px;
-    line-height: 24px;
   }
 }
+
+
+
+
+
+/*--------------------------------------------------------------
+# Projects Section
+--------------------------------------------------------------*/
+#projects {
+  max-width: 1680px;
+  position: relative;
+  margin: auto;
+  padding: 0 90px;
+}
+
