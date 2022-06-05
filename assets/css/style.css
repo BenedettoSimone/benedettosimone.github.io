@@ -282,13 +282,13 @@ body {
 --------------------------------------------------------------*/
 #hero {
   max-width: 1680px;
-  height: calc(100vh - 260px);
+  height: 100vh;
   position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: auto;
   padding: 0 90px;
+  margin: -130px auto auto;
 
 }
 
@@ -377,30 +377,30 @@ body {
 # Projects Section
 --------------------------------------------------------------*/
 #projects {
-  max-width: 1680px;
+  max-width: 1440px;
   position: relative;
   margin: auto;
   padding: 0 90px;
 }
 
-#projects #projects-list{
-  max-width: 1680px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 3rem;
-  padding: 50px;
+.wrapper-flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-
 /* single card */
-#projects #projects-list .card{
+.card{
+  width: 600px;
   border-radius: 11px;
   border: 1px solid #eaeaea;
   box-shadow: 0 .5rem 1.2rem rgba(0,0,0,.2);
   padding: 20px;
   display: flex;
+  margin-bottom: 1rem;
+  margin-left: 1rem;
 }
-#projects #projects-list .card .left-card{
+.card .left-card{
   width: 280px;
   height: 168px;
   background-color: red;
@@ -409,14 +409,12 @@ body {
   border-radius: 5px;
 }
 
-#projects #projects-list .card .left-card img{
+.card .left-card img{
   width: 100%;
 }
 
-#projects #projects-list .card .right-card .topic{
+.card .right-card .topic{
   color: var(--primary-color);
 }
-
-
 
 
