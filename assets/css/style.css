@@ -394,17 +394,17 @@ body {
 
 /* single card */
 .card{
-  width: 600px;
+  width: 500px;
   border-radius: 11px;
   border: 1px solid #eaeaea;
   box-shadow: 0 .5rem 1.2rem rgba(0,0,0,.2);
   padding: 20px;
   display: flex;
-  margin-bottom: 1rem;
+  margin-bottom: 3rem;
   margin-left: 1rem;
 }
 .card .left-card{
-  width: 280px;
+  width: 168px;
   height: 168px;
   background-color: red;
   padding: 3px;
