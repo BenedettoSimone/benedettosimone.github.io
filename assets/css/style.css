@@ -551,3 +551,27 @@ body {
 
 
 
+/*--------------------------------------------------------------
+# Footer Section
+--------------------------------------------------------------*/
+
+.site-footer
+{
+  margin-top: 100px;
+  height: 100px;
+  background-color:var(--primary-color);
+  padding:45px 0 20px;
+  font-size:15px;
+  line-height:24px;
+  color:#fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 410px){
+  .site-footer
+  {
+    font-size:12px;
+  }
+}
