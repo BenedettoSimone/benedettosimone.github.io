@@ -28,6 +28,8 @@
 
 <body id="body" class="light-mode">
 
+
+
 <!-- Navbar section -->
 <div class="header">
   <div class="navbar">
@@ -139,9 +141,11 @@
     $(this).toggleClass('open');
     if(!state) {
       $('.navbar-responsive').css("transform", "translate3d(0,0,0)")
+      $('#body').css("overflow", "hidden")
       state = true
     } else {
       $('.navbar-responsive').css("transform", "translate3d(-100%,0,0)")
+      $('#body').css("overflow", "auto")
       state = false
     }
 
@@ -150,9 +154,11 @@
     value.addEventListener("click",function(){
       if(!state) {
         $('.navbar-responsive').css("transform", "translate3d(0,0,0)")
+        $('#body').css("overflow", "hidden")
         state = true
       } else {
         $('.navbar-responsive').css("transform", "translate3d(-100%,0,0)")
+        $('#body').css("overflow", "auto")
         state = false
       }
       $('#nav-icon3').removeClass('open')
