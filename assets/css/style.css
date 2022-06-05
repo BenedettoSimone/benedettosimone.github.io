@@ -369,6 +369,7 @@ body {
     flex-direction: column-reverse;
     text-align: center;
     justify-content: start;
+    padding: 0 40px;
   }
 
   #hero .left-container, #hero .right-container{
@@ -497,6 +498,10 @@ body {
 
 
 @media screen and (max-width: 744px){
+  #projects{
+    padding: 0 40px;
+  }
+
   .card{
     width: 297px;
     flex-direction: column;
