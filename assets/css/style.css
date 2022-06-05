@@ -333,7 +333,6 @@ body {
   align-items: center;
   justify-content: center;
   color: #ffffff;
-  margin-right: 20px;
   transition: 0.3s;
   background: var(--secondary-color);
   border-radius: 30px;
@@ -368,8 +367,45 @@ body {
   #hero {
     flex-direction: column-reverse;
     text-align: center;
-    margin-top:100px;
+    justify-content: start;
   }
+
+  #hero .left-container, #hero .right-container{
+    margin-top: 0;
+  }
+
+  #hero .left-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .social-links{
+    display: flex;
+    gap:20px;
+  }
+
+}
+
+
+@media screen and (max-width: 410px){
+  #hero{
+    padding: 0;
+  }
+
+  #hero .hello {
+    font-size: 17px;
+  }
+
+  #hero .name{
+    font-size: 40px;
+  }
+
+  #hero p {
+    margin-top: 10px;
+    font-size: 17px;
+  }
+
 }
 
 
