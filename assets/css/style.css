@@ -282,16 +282,19 @@ body {
 --------------------------------------------------------------*/
 #hero {
   max-width: 1680px;
-  height: 100vh;
+  height: calc(100vh - 130px);
   position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 90px;
-  margin: -130px auto auto;
+  margin: 0px auto auto;
 
 }
 
+#hero .left-container, #hero .right-container{
+  margin-top: -130px;
+}
 
 #hero .name, #hero .hello {
   margin: 0;
