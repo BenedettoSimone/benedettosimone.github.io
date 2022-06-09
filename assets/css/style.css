@@ -384,6 +384,7 @@ body {
     text-align: center;
     justify-content: start;
     padding: 0 40px;
+    height: auto;
   }
 
   #hero .left-container, #hero .right-container{
@@ -513,6 +514,7 @@ body {
 @media screen and (max-width: 744px){
   #projects{
     padding: 0 40px;
+    margin-top:100px;
   }
 
   .card{
