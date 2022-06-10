@@ -6,6 +6,7 @@
   --light-blue:#65C7F7;
   --blue:#0052D4;
   --theme-bg-color: #1c1f28;
+  --theme-color: #13151b;
   --heading:#ffffff;
   --secondary-color: #8492bb;
 }
@@ -27,9 +28,18 @@
   font-weight: 700;
 }
 
+.gradient{
+  background-image: var(--primary-color);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+
 body {
   margin: 0;
-  background: var(--theme-bg-color) url("../img/background-lines-63.png") repeat-y top center;
+  background: url("../img/background-lines-63.png") repeat-y top center;
+  background-color: var(--theme-bg-color);
 }
 
 /* BUILDING */
@@ -332,11 +342,6 @@ body {
 }
 
 #hero p span {
-  background-image: var(--primary-color);
-  background-size: 100%;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
   letter-spacing: 1px;
 }
 
@@ -457,9 +462,10 @@ body {
 
 /* single card */
 .card{
+  background-color: var(--theme-color);
   width: 500px;
   border-radius: 11px;
-  box-shadow: 0 .5rem 1.2rem #D5DEFD;
+  box-shadow: 0 .5rem 1.2rem var(--theme-color);
   padding: 20px;
   display: flex;
 }
@@ -481,12 +487,12 @@ body {
 }
 
 .card .right-card .topic{
-  color: var(--primary-color);
   text-transform: uppercase;
 }
 
 .card .right-card .title-project{
   margin-top: 0;
+  color: var(--heading);
 }
 
 .right-card .external-links {
@@ -517,9 +523,10 @@ body {
 
 
 @media screen and (max-width: 744px){
-  #projects{
+  #projects {
     padding: 0 40px;
-    margin-top:100px;
+    margin-top: 100px;
+    text-align: center;
   }
 
   .card{
@@ -550,10 +557,6 @@ body {
     width: 100%;
   }
 
-  .card .right-card .topic{
-    color: var(--primary-color);
-    text-transform: uppercase;
-  }
 }
 
 
@@ -566,7 +569,7 @@ body {
 {
   margin-top: 100px;
   height: 100px;
-  background-color:var(--primary-color);
+  background:var(--primary-color);
   padding:45px 0 20px;
   font-size:15px;
   line-height:24px;
