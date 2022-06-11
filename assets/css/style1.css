@@ -30,6 +30,15 @@
   font-weight: 700;
 }
 
+.button-style{
+  background: var(--primary-color);
+}
+
+.button-style:hover, .button-style:focus{
+  box-shadow: 0 0.5em 0.5em -0.4em var(--light-blue);
+  transform: translateY(-0.25em);
+}
+
 .gradient{
   background-image: var(--primary-color);
   background-size: 100%;
@@ -123,7 +132,6 @@ body {
 }
 
 .navbar .navbar__wrapper .navbar__link a#about-button{
-  background: var(--primary-color);
   color: white;
   border: 0;
   margin: 0;
@@ -143,12 +151,6 @@ body {
   padding: 14px 0;
   z-index: 2;
 
-}
-
-.navbar .navbar__wrapper .navbar__link a#about-button:focus,
-.navbar .navbar__wrapper .navbar__link a#about-button:hover{
-  box-shadow: 0 0.5em 0.5em -0.4em var(--light-blue);
-  transform: translateY(-0.25em);
 }
 
 
@@ -288,18 +290,11 @@ body {
 }
 
 .navbar-responsive .navbar-responsive__nav .navbar-responsive__link a#about-button-responsive{
-  background: var(--primary-color);
   color: white;
   border: 0;
   margin: 0;
   border-radius: 11px;
   transition: 0.25s;
-}
-
-.navbar-responsive .navbar-responsive__nav .navbar-responsive__link a#about-button-responsive:focus,
-.navbar-responsive .navbar-responsive__nav .navbar-responsive__link a#about-button-responsive:hover{
-  box-shadow: 0 0.5em 0.5em -0.4em var(--light-blue);
-  transform: translateY(-0.25em);
 }
 
 

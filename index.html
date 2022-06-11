@@ -53,7 +53,7 @@
           <li class="navbar__link after-transform"><a href="#">About</a></li>
           <li class="navbar__link after-transform"><a href="#">Resume</a></li>
           <li class="navbar__link after-transform"><a href="#">Projects</a></li>
-          <li class="navbar__link after-transform"><a id="about-button" href="#">Let's Talk</a></li>
+          <li class="navbar__link after-transform"><a id="about-button" class="button-style" href="#">Let's Talk</a></li>
         </ul>
       </nav>
     </div>
@@ -63,7 +63,7 @@
       <li class="navbar-responsive__link after-transform"><a href="#">About</a></li>
       <li class="navbar-responsive__link after-transform"><a href="#">Resume</a></li>
       <li class="navbar-responsive__link after-transform"><a href="#">Projects</a></li>
-      <li class="navbar-responsive__link after-transform"><a id="about-button-responsive" href="#">Let's Talk</a></li>
+      <li class="navbar-responsive__link after-transform"><a id="about-button-responsive" class="button-style" href="#">Let's Talk</a></li>
     </ul>
   </div>
 </div>
@@ -154,7 +154,6 @@
   <p class="copyright-text">&copy; 2022 - Benedetto Simone. Written with <i class='bx bxs-heart' style="color: #e43f52" ></i></p>
 </footer>
 
-
 </body>
 
 <script>
@@ -190,6 +189,18 @@
     })
   })
 })</script>
+
+<script>
+  $(document).ready(function() {
+//Preloader
+    preloaderFadeOutTime = 500;
+    function hidePreloader() {
+      var preloader = $('.spinner-wrapper');
+      preloader.fadeOut(preloaderFadeOutTime);
+    }
+    hidePreloader();
+  });
+</script>
 
 <!-- JS File to animate words typed -->
 <script src="assets/vendor/typed.js/typed.min.js"></script>
