@@ -2,9 +2,11 @@
 # General
 --------------------------------------------------------------*/
 :root {
-  --primary-color: linear-gradient(20deg, #9CECFB,#0052D4);
-  --light-blue:#65C7F7;
-  --blue:#0052D4;
+  /* --primary-color: linear-gradient(20deg, #9CECFB,#0052D4);*/
+  --primary-color: linear-gradient(20deg, #DA40FF,#4a4dfb);
+  /*--primary-color: linear-gradient(20deg,#E3677E, #4a4dfb);*/
+  --light-blue:#DA40FF;
+  --blue:#4a4dfb;
   --theme-bg-color: #1c1f28;
   --theme-color: #13151b;
   --heading:#ffffff;
@@ -38,7 +40,7 @@
 
 body {
   margin: 0;
-  background: url("../img/background-lines-63.png") repeat-y top center;
+  background:url("../img/hero-bg.png") no-repeat top left, url("../img/background-lines-63.png") repeat-y top center;
   background-color: var(--theme-bg-color);
 }
 
@@ -108,7 +110,7 @@ body {
 }
 
 .navbar .navbar__wrapper .navbar__brand {
-  color: var(--light-blue);
+  color: var(--heading);
   text-decoration: none;
   font-weight: bold;
   font-size: 20px;
