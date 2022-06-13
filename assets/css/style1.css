@@ -216,6 +216,90 @@
 # End Preloader
 --------------------------------------------------------------*/
 
+
+
+/*--------------------------------------------------------------
+# Back to top button
+--------------------------------------------------------------
+.back-to-top {
+  position: fixed;
+  visibility: hidden;
+  opacity: 0;
+  right: 15px;
+  bottom: 15px;
+  z-index: 996;
+  background: var(--primary-color);
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  transition: all 0.4s;
+}
+
+.back-to-top i {
+  font-size: 28px;
+  color: #fff;
+  line-height: 0;
+}
+
+.back-to-top:hover {
+  background: #0678e3;
+  color: #fff;
+}
+
+.back-to-top.active {
+  visibility: visible;
+  opacity: 1;
+}
+
+ */
+
+
+#button-to-top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--primary-color);
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  text-align: center;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  transition: background-color .3s,
+  opacity .5s, visibility .5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 998;
+}
+#button-to-top::after {
+  content: "\f077";
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 15px;
+  line-height: 50px;
+  color: #fff;
+}
+#button-to-top:active {
+  background-color: #555;
+}
+
+#button-to-top:hover {
+  cursor: pointer;
+}
+#button-to-top.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+
+
+
+/*--------------------------------------------------------------
+# End back to top button
+--------------------------------------------------------------*/
+
 body {
   margin: 0;
   background:url("../img/hero-bg.png") no-repeat top left, url("../img/background-lines-39.png") repeat-y top center, url("../img/hero-background-right.png") no-repeat top right ;
