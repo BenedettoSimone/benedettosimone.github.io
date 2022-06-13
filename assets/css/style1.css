@@ -841,6 +841,50 @@ body {
 
 
 /*--------------------------------------------------------------
+# Contact Section
+--------------------------------------------------------------*/
+#background-section{
+  max-width: 1440px;
+  position: relative;
+  margin-top:200px;
+  margin: auto;
+  height: 450px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+
+#background-section #left-hand{
+  width: 782px;
+  position: absolute;
+  left: -216px;
+  top: 63px;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+
+
+#background-section #right-hand{
+  width: 782px;
+  position: absolute;
+  right: -216px;
+  top: 63px;
+}
+
+#contact {
+  text-align: center;
+}
+
+#contact .title-section{
+  font-size: 40px;
+  display: inline-block;
+  margin-top: 0;
+}
+
+
+/*--------------------------------------------------------------
 # Footer Section
 --------------------------------------------------------------*/
 
