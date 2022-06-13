@@ -490,12 +490,6 @@ body {
 }
 
 
-
-
-/* ------- End Responsive Navbar ------- */
-
-
-
 @media (max-width: 768px) {
   .navbar__nav {
     display: none !important;

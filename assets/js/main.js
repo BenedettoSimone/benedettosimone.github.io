@@ -33,6 +33,70 @@
 
 
   /**
+   * Show responsive navbar
+   */
+  var state = false,
+      links = $('.navbar-responsive__link')
+  $(document).ready(function(){
+    $('#nav-icon3').click(function(){
+      $(this).toggleClass('open');
+      if(!state) {
+        $('.navbar-responsive').css("transform", "translate3d(0,0,0)")
+        $('#body').css("overflow", "hidden")
+        state = true
+      } else {
+        $('.navbar-responsive').css("transform", "translate3d(-100%,0,0)")
+        $('#body').css("overflow", "auto")
+        state = false
+      }
+
+    })
+    $.each(links, function(index,value){
+      value.addEventListener("click",function(){
+        if(!state) {
+          $('.navbar-responsive').css("transform", "translate3d(0,0,0)")
+          $('#body').css("overflow", "hidden")
+          state = true
+        } else {
+          $('.navbar-responsive').css("transform", "translate3d(-100%,0,0)")
+          $('#body').css("overflow", "auto")
+          state = false
+        }
+        $('#nav-icon3').removeClass('open')
+      })
+    })
+  })
+
+  /**
+   * Hide responsive navbar
+   */
+
+  function hideNavbar(x) {
+    if (x.matches) { // If media query matches
+      $('.navbar-responsive').css("transform", "translate3d(-100%,0,0)")
+      $('#nav-icon3').removeClass('open')
+      state = false
+    }
+  }
+
+  var x = window.matchMedia("(min-width: 768px)")
+  hideNavbar(x) // Call listener function at run time
+  x.addEventListener("change", () => {
+    hideNavbar(x)
+  }); // Attach listener function on state changes
+
+
+
+  /**
+   * Preloader
+   */
+
+  $(window).on("load", function (){
+    $(".sk-circle-wrapper").fadeOut("slow");
+  });
+
+
+  /**
    * Back to top button
    */
 
