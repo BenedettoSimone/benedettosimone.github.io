@@ -292,7 +292,7 @@ body {
 --------------------------------------------------------------*/
 
 .navbar .navbar__wrapper {
-  max-width: 1680px;
+  max-width: 1440px;
   margin: 0 auto;
   padding: 50px 90px 30px 90px;
   font-weight: 600;
@@ -518,8 +518,9 @@ body {
 # Hero Section
 --------------------------------------------------------------*/
 #hero {
-  max-width: 1680px;
-  height: calc(100vh - 130px);
+  max-width: 1440px;
+  /*height: calc(100vh - 130px);*/
+  height: 700px;
   position: relative;
   display: flex;
   justify-content: space-between;
@@ -662,6 +663,7 @@ body {
 --------------------------------------------------------------*/
 #about {
   max-width: 1440px;
+  height: 500px;
   position: relative;
   display: flex;
   justify-content: space-between;
@@ -669,6 +671,7 @@ body {
   padding: 0 90px;
   margin: 0px auto auto;
   gap: 80px;
+  background: red;
 
 }
 
@@ -720,12 +723,13 @@ body {
   max-width: 1440px;
   position: relative;
   margin: auto;
-  padding: 0 90px;
+  padding: 65px 90px;
 }
 
 #projects .title-section{
   font-size: 40px;
   display: inline-block;
+  margin-top:0;
 }
 
 .wrapper-flex {
@@ -805,7 +809,7 @@ body {
   }
 
   #projects .title-section{
-    font-size: 30px;
+    font-size: 40px;
   }
 
   .card{
@@ -848,11 +852,12 @@ body {
   position: relative;
   margin-top:200px;
   margin: auto;
-  height: 450px;
+  height: 600px;
   display: flex;
   justify-content: center;
   align-items: center;
-
+  color: #ffffff;
+  background:url("../img/Frame1.png") no-repeat center left, url("../img/Frame2.png") no-repeat center right;
 }
 
 
@@ -873,6 +878,8 @@ body {
   top: 63px;
 }
 
+
+
 #contact {
   text-align: center;
 }
@@ -883,6 +890,12 @@ body {
   margin-top: 0;
 }
 
+#contact #contact-content #email, #contact #contact-content #cell-phone{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  justify-content: center;
+}
 
 /*--------------------------------------------------------------
 # Footer Section
@@ -890,7 +903,7 @@ body {
 
 .site-footer
 {
-  margin-top: 100px;
+  max-width: 1440px;
   height: 100px;
   background:var(--primary-color);
   padding:45px 0 20px;
@@ -900,6 +913,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: auto;
 }
 
 @media screen and (max-width: 410px){
