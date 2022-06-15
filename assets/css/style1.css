@@ -897,14 +897,12 @@ body {
 
 #contact {
   text-align: center;
-  /*background:red;*/
 }
 
 #contact .title-section{
   font-size: 40px;
   display: inline-block;
   margin-top: 0;
-  color: green;
 }
 
 #contact #contact-content #email, #contact #contact-content #cell-phone{
@@ -930,7 +928,6 @@ body {
 @media screen and (max-width: 646px){
   #background-section{
     margin-top:100px;
-    margin-bottom: 100px;
   }
   #background-section #left-hand, #background-section #right-hand{
     display: none;
