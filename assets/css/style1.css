@@ -904,6 +904,7 @@ body {
   font-size: 40px;
   display: inline-block;
   margin-top: 0;
+  color: red;
 }
 
 #contact #contact-content #email, #contact #contact-content #cell-phone{
