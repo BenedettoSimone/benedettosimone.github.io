@@ -860,28 +860,44 @@ body {
   background:url("../img/Frame1.png") no-repeat center left, url("../img/Frame2.png") no-repeat center right;
 }
 
-
 #background-section #left-hand{
-  width: 782px;
+  width: 400px;
   position: absolute;
-  left: -216px;
-  top: 63px;
+  left: 0;
+  top: 200px;
   -webkit-transform: scaleX(-1);
   transform: scaleX(-1);
 }
 
-
 #background-section #right-hand{
-  width: 782px;
+  width: 400px;
   position: absolute;
-  right: -216px;
-  top: 63px;
+  right: 0;
+  top: 200px;
 }
 
+#background-section #top-hand
+{
+  display: none;
+  width: 250px;
+  position: absolute;
+  top:0;
+  right: 0;
 
+}
+
+#background-section #bottom-hand{
+  display: none;
+  width: 250px;
+  position: absolute;
+  bottom:0;
+  left: 0;
+  rotate:-180deg;
+}
 
 #contact {
   text-align: center;
+  /*background:red;*/
 }
 
 #contact .title-section{
@@ -895,6 +911,32 @@ body {
   align-items: center;
   gap: 8px;
   justify-content: center;
+}
+
+@media screen and (max-width: 1049px){
+  #background-section #left-hand, #background-section #right-hand{
+    width: 300px;
+  }
+}
+
+
+@media screen and (max-width: 866px){
+  #background-section #left-hand, #background-section #right-hand{
+    width: 200px;
+  }
+}
+
+@media screen and (max-width: 646px){
+  #background-section{
+    margin-top:100px;
+  }
+  #background-section #left-hand, #background-section #right-hand{
+    display: none;
+  }
+
+  #background-section #top-hand, #background-section #bottom-hand{
+    display: block;
+  }
 }
 
 /*--------------------------------------------------------------
@@ -914,6 +956,10 @@ body {
   justify-content: center;
   align-items: center;
   margin: auto;
+}
+
+.site-footer .copyright-text{
+  text-align: center;
 }
 
 @media screen and (max-width: 410px){
