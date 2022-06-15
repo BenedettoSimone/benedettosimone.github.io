@@ -912,7 +912,6 @@ body {
   align-items: center;
   gap: 8px;
   justify-content: center;
-  text-decoration: none!important;
 }
 
 @media screen and (max-width: 1049px){
@@ -931,6 +930,7 @@ body {
 @media screen and (max-width: 646px){
   #background-section{
     margin-top:100px;
+    margin-bottom: 100px;
   }
   #background-section #left-hand, #background-section #right-hand{
     display: none;
