@@ -904,7 +904,7 @@ body {
   font-size: 40px;
   display: inline-block;
   margin-top: 0;
-  color: blue;
+  color: green;
 }
 
 #contact #contact-content #email, #contact #contact-content #cell-phone{
@@ -912,7 +912,7 @@ body {
   align-items: center;
   gap: 8px;
   justify-content: center;
-  text-decoration: none;
+  text-decoration: none!important;
 }
 
 @media screen and (max-width: 1049px){
