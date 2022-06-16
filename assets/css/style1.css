@@ -724,10 +724,34 @@ body {
   padding: 65px 90px;
 }
 
-#projects .title-section{
+#projects #top-section-projects{
+  display: flex;
+  gap: 12px;
+  margin-bottom: 40px;
+  align-items:center;
+}
+
+#projects #top-section-projects button{
+  width: 30px;
+  height: 30px;
+  border: 0;
+  margin: 0;
+  color: white;
+  border-radius: 11px;
+  transition: 0.25s;
+  cursor: pointer;
+}
+
+.div-icon{
+  display: inline-flex;
+  flex-direction: column;
+  gap:0
+}
+
+#projects #top-section-projects .title-section{
   font-size: 40px;
   display: inline-block;
-  margin-top:0;
+  margin:0;
 }
 
 .wrapper-flex {
@@ -753,6 +777,7 @@ body {
   padding: 3px;
   margin-right: 27px;
   border-radius: 5px;
+  /*border-radius: 11px 11px 0 0;*/
 }
 
 .card .right-card{

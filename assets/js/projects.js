@@ -1,18 +1,35 @@
 var list_of_projects = [
-    { "date":"06-06-2022",
-        "topic":"software dependability",
+    { "date":"15-02-2021",
+        "cover": "assets/img/project-cover/uniseats-cover.jpg",
+        "topic":"Software Engineering",
+        "title":"Uniseats",
+        "github":"https://github.com/BenedettoSimone/UniSeats",
+        "paper":""
+    },
+
+    { "date":"09-07-2021",
+        "cover": "assets/img/project-cover/ecomobility-cover.jpg",
+        "topic":"Human computer iteraction",
         "title":"Ecomobility",
         "github":"https://github.com/BenedettoSimone/eco-mobility",
         "paper":""
     },
-    { "date":"08-06-2022",
-        "topic":"software dependability",
-        "title":"Ecomobility2",
-        "github":"https://github.com/BenedettoSimone/eco-mobility",
-        "paper":""
+
+    { "date":"03-02-2022",
+        "cover": "assets/img/project-cover/visual-speech-cover.jpg",
+        "topic":"CONTEXT AWARE SECURITY ANALYTICS IN COMPUTER VISION",
+        "title":"Visual Speech Recognition",
+        "github":"https://github.com/BenedettoSimone/VisualSpeech",
+        "paper":"assets/pdf/paper-casa.pdf"
     },
 
-
+    { "date":"06-06-2022",
+        "cover": "assets/img/project-cover/edt-for-csd-cover.png",
+        "topic":"Software Dependability",
+        "title":"Evolutionary Decision Tree for Code Smell Detection",
+        "github":"https://github.com/BenedettoSimone/EDTforCSD",
+        "paper":"assets/pdf/paper-swd.pdf"
+    }
 
 ];
 
@@ -89,7 +106,8 @@ function insert_cards(sorting_mode){
         //left card to contain image
         const leftCard = document.createElement("div");
         leftCard.classList.add("left-card");
-
+        leftCard.style.background = "url("+list_of_projects[i].cover+")";
+        leftCard.style.backgroundSize = "cover";
         //right card to contain content
         const rightCard = document.createElement("div");
         rightCard.classList.add("right-card");
