@@ -265,9 +265,8 @@
 --------------------------------------------------------------*/
 
 body {
-  margin: 0;/*
-  background:url("../img/hero-bg.png") no-repeat top left, url("../img/background-lines-39.png") repeat-y top center, url("../img/hero-background-right.png") no-repeat top right ;
-  */
+  margin: 0;
+  background:url("../img/background-lines-39.png") repeat-y top center;
   background-color: var(--theme-bg-color);
 }
 
