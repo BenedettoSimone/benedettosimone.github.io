@@ -742,13 +742,7 @@ body {
   cursor: pointer;
 }
 
-.div-icon{
-  display: inline-flex;
-  flex-direction: column;
-  gap:0
-}
-
-#projects #top-section-projects .title-section{
+#projects .title-section{
   font-size: 40px;
   display: inline-block;
   margin:0;

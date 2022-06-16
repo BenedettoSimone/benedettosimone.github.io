@@ -1,5 +1,5 @@
 var list_of_projects = [
-    { "date":"15-02-2021",
+    { "id":"1",
         "cover": "assets/img/project-cover/uniseats-cover.jpg",
         "topic":"Software Engineering",
         "title":"Uniseats",
@@ -7,7 +7,7 @@ var list_of_projects = [
         "paper":""
     },
 
-    { "date":"09-07-2021",
+    { "id":"2",
         "cover": "assets/img/project-cover/ecomobility-cover.jpg",
         "topic":"Human computer iteraction",
         "title":"Ecomobility",
@@ -15,7 +15,7 @@ var list_of_projects = [
         "paper":""
     },
 
-    { "date":"03-02-2022",
+    { "id":"3",
         "cover": "assets/img/project-cover/visual-speech-cover.jpg",
         "topic":"CONTEXT AWARE SECURITY ANALYTICS IN COMPUTER VISION",
         "title":"Visual Speech Recognition",
@@ -23,7 +23,7 @@ var list_of_projects = [
         "paper":"assets/pdf/paper-casa.pdf"
     },
 
-    { "date":"06-06-2022",
+    { "id":"4",
         "cover": "assets/img/project-cover/edt-for-csd-cover.png",
         "topic":"Software Dependability",
         "title":"Evolutionary Decision Tree for Code Smell Detection",
@@ -33,69 +33,15 @@ var list_of_projects = [
 
 ];
 
-/**
- * Generic sorting function by field
- */
-const sort_by = (field, reverse, primer) => {
 
-    const key = primer ?
-        function(x) {
-            return primer(x[field])
-        } :
-        function(x) {
-            return x[field]
-        };
-
-    reverse = !reverse ? 1 : -1;
-
-    return function(a, b) {
-        return a = key(a), b = key(b), reverse * ((a > b) - (b > a));
-    }
-}
-
-
-//set initial order descendant
-var state=1;
-
-window.onload = insert_cards(state);
-
-
-/**
- * Sort list onclick
- */
-function onclick_sort(){
-
-    const node = document.getElementsByClassName("wrapper-flex");
-    while (node[0].firstChild) {
-        node[0].removeChild(node[0].lastChild);
-    }
-
-    if (state==1){
-        state=0;
-        insert_cards(state)
-    }
-    else{
-        state=1;
-        insert_cards(state)
-    }
-
-}
-
+window.onload = insert_cards();
 
 /**
  * Create list of card
- * Param: 0 = ascending; 1 = descending;
  */
-function insert_cards(sorting_mode){
+function insert_cards(){
 
     const main_div_project = document.getElementsByClassName("wrapper-flex");
-
-    if(sorting_mode==0) {
-
-        list_of_projects.sort(sort_by('date', false, parseInt));
-    }else{
-        list_of_projects.sort(sort_by('date', true, parseInt));
-    }
 
     for(let i=0; i<list_of_projects.length; i++){
 
@@ -117,7 +63,7 @@ function insert_cards(sorting_mode){
         const topic = document.createElement("h5");
         topic.classList.add("topic");
         topic.classList.add("gradient");
-        topic.innerHTML = list_of_projects[i].topic + list_of_projects[i].date;
+        topic.innerHTML = list_of_projects[i].topic;
 
         const title = document.createElement("h3");
         title.classList.add("title-project");
