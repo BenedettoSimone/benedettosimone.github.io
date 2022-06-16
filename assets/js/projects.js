@@ -108,6 +108,8 @@ function insert_cards(sorting_mode){
         leftCard.classList.add("left-card");
         leftCard.style.background = "url("+list_of_projects[i].cover+")";
         leftCard.style.backgroundSize = "cover";
+        leftCard.style.backgroundPositionX = "center";
+
         //right card to contain content
         const rightCard = document.createElement("div");
         rightCard.classList.add("right-card");
