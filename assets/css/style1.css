@@ -265,8 +265,9 @@
 --------------------------------------------------------------*/
 
 body {
-  margin: 0;
+  margin: 0;/*
   background:url("../img/hero-bg.png") no-repeat top left, url("../img/background-lines-39.png") repeat-y top center, url("../img/hero-background-right.png") no-repeat top right ;
+  */
   background-color: var(--theme-bg-color);
 }
 
@@ -284,8 +285,6 @@ body {
   font-size: 29px;
 }
 
-
-
 /*--------------------------------------------------------------
 # Navbar
 --------------------------------------------------------------*/
@@ -295,6 +294,7 @@ body {
   margin: 0 auto;
   padding: 50px 90px 30px 90px;
   font-weight: 600;
+  background:url("../img/hero-bg.png") no-repeat top left, url("../img/hero-background-right.png") no-repeat top right ;
 }
 
 
@@ -526,6 +526,8 @@ body {
   align-items: center;
   padding: 0 90px;
   margin: 0px auto auto;
+  background:url("../img/hero-bg.png") no-repeat top left, url("../img/hero-background-right.png") no-repeat top right ;
+  background-position-y: -130px ;
 
 }
 
@@ -723,6 +725,7 @@ body {
   position: relative;
   margin: auto;
   padding: 65px 90px;
+  background: #4a4dfb;
 }
 
 #projects #top-section-projects{
