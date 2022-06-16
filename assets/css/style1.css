@@ -876,6 +876,7 @@ body {
   align-items: center;
   color: #ffffff;
   background:url("../img/Frame1.png") no-repeat center left, url("../img/Frame2.png") no-repeat center right;
+  padding: 0 90px;
 }
 
 #background-section #left-hand{
@@ -965,7 +966,7 @@ body {
   max-width: 1440px;
   height: 100px;
   background:var(--primary-color);
-  padding:20px 0 20px;
+  padding:20px 90px 20px 90px;
   font-size:15px;
   line-height:24px;
   color:#fff;
