@@ -29,6 +29,14 @@ var list_of_projects = [
         "title":"Evolutionary Decision Tree for Code Smell Detection",
         "github":"https://github.com/BenedettoSimone/EDTforCSD",
         "paper":"assets/pdf/paper-swd.pdf"
+    },
+
+    { "id":"5",
+        "cover": "assets/img/project-cover/quantum-data-analytics.png",
+        "topic":"Quantum information and quantum computing",
+        "title":"Quantum Computing and Data Anaytics",
+        "github":"",
+        "paper":"assets/pdf/paper-iq.pdf"
     }
 
 ];
