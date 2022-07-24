@@ -37,6 +37,14 @@ var list_of_projects = [
         "title":"Quantum Computing and Data Anaytics",
         "github":"",
         "paper":"assets/pdf/paper-iq.pdf"
+    },
+
+    { "id":"6",
+        "cover": "assets/img/project-cover/voice-assistant.jpg",
+        "topic":"Iot Data Analytics",
+        "title":"Integration of Home Assistant with an open-source Voice Assistant",
+        "github":"",
+        "paper":"assets/pdf/paper-voice-assistant.pdf"
     }
 
 ];
