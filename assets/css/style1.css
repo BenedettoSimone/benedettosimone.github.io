@@ -746,7 +746,8 @@ body {
 }
 
 #resume .row{
-  padding: 0 90px;
+  margin: 0 auto;
+  padding: 0 60px;
 }
 
 #resume .resume-title {
@@ -781,6 +782,8 @@ body {
   display: inline-block;
   font-weight: 600;
   margin-bottom: 10px;
+  margin-top:0;
+  margin-bottom:20px;
 }
 #resume .resume-item ul {
   padding-left: 20px;
@@ -797,7 +800,7 @@ body {
   width: 16px;
   height: 16px;
   border-radius: 50px;
-  left: -10px;
+  left: -11px;
   top: 0;
   background: var(--light-blue);
   border: 2px solid var(--light-blue);
@@ -855,8 +858,8 @@ body {
   display: flex;
 }
 .card .left-card{
-  width: 168px;
-  height: 168px;
+  width: 190px;
+  height: 190px;
   background-color: red;
   padding: 3px;
   margin-right: 27px;
