@@ -57,7 +57,7 @@ window.onload = insert_cards();
  */
 function insert_cards(){
 
-    const main_div_project = document.getElementsByClassName("wrapper-flex");
+    const main_div_project = document.getElementsByClassName("wrapper-flex-university");
 
     for(let i=0; i<list_of_projects.length; i++){
 
