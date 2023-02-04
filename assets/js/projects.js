@@ -45,6 +45,30 @@ var list_of_projects = [
         "title":"Integration of Home Assistant with an open-source Voice Assistant",
         "github":"",
         "paper":"assets/pdf/paper-voice-assistant.pdf"
+    },
+
+    { "id":"7",
+        "cover": "assets/img/project-cover/smart-cooktop.jpg",
+        "topic":"HCI and Experience Design for IoT",
+        "title":"Smart Cooktop",
+        "github":"",
+        "paper":"assets/pdf/HCI-Presentation.pdf"
+    },
+
+    { "id":"8",
+        "cover": "assets/img/project-cover/robotic-arm.jpg",
+        "topic":"Robot Programming",
+        "title":"Pick and place using MoveIt! and object classification",
+        "github":"https://github.com/BenedettoSimone/RoboticArm",
+        "paper":""
+    },
+
+    { "id":"9",
+        "cover": "assets/img/project-cover/smart-city.jpg",
+        "topic":"Lab of IoT",
+        "title":"Smart City with Arduino",
+        "github":"https://github.com/BenedettoSimone/SmartCity-Arduino",
+        "paper":""
     }
 
 ];

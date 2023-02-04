@@ -825,10 +825,8 @@ body {
 }
 
 #university-projects #top-section-university-projects{
-  display: flex;
   gap: 12px;
   margin-bottom: 40px;
-  align-items:center;
 }
 
 #university-projects #top-section-university-projects button{
