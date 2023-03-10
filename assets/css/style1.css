@@ -604,7 +604,7 @@ body {
   }
 }
 
-@media screen and (max-width: 744px){
+@media screen and (max-width: 830px){
   #hero {
     flex-direction: column-reverse;
     text-align: center;
@@ -666,13 +666,13 @@ body {
 --------------------------------------------------------------*/
 #about {
   max-width: 1440px;
-  height: 500px;
+  height: 360px;
   position: relative;
   display: flex;
-  justify-content: space-between;
+  /* justify-content: start; */
   align-items: center;
   padding: 0 90px;
-  margin: 0px auto auto;
+  /* margin: 0px auto auto; */
   gap: 80px;
 
 }
@@ -710,7 +710,7 @@ body {
 }
 
 
-@media screen and (max-width: 744px){
+@media screen and (max-width: 830px){
   #about {
     flex-direction: column;
     text-align: center;

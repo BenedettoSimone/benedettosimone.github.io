@@ -34,7 +34,7 @@ var list_of_projects = [
     { "id":"5",
         "cover": "assets/img/project-cover/quantum-data-analytics.png",
         "topic":"Quantum information and quantum computing",
-        "title":"Quantum Computing and Data Anaytics",
+        "title":"Quantum Computing and Data Analytics",
         "github":"",
         "paper":"assets/pdf/paper-iq.pdf"
     },
