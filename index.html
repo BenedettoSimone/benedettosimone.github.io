@@ -27,7 +27,7 @@
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
 </head>
-
+<body id="body" onresize="onResize()">
 <!-- Navbar section -->
 <div class="header">
     <div class="navbar">
@@ -67,12 +67,10 @@
     <div class="right-container"  style="position: relative">
      <img style="width: 400px" src="assets/img/hero-img.png">
     </div>
-
-  <!--
-    <div class="circle-outer">
-      <div class="circle"></div>
-    </div>-->
   </section>
+
+
+
 <!-- About section -->
 <section id="about" data-aos="fade-up" data-aos-duration="1000">
   <div class="left-container bold">
@@ -83,11 +81,6 @@
     <p>In 2021, I completed my bachelor's degree in Computer Science at the University of Salerno with a thesis in Human-Computer Interaction, made in collaboration with the Salerno Fire Department. I am currently a second-year Internet of Things master's student and I am doing a research activity at the University of Salerno focusing on Visual Speech Recognition.</p>
     <a id="cv-button" class="button-style semi-bold" href="" download>Download CV</a></li>
   </div>
-
-  <!--
-    <div class="circle-outer">
-      <div class="circle"></div>
-    </div>-->
 </section>
 
 <!-- University Projects section -->
@@ -164,6 +157,23 @@
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script>
   AOS.init();
+</script>
+<script>
+
+  /**
+   * Media query mobile navbar scroll
+   */
+
+  window.onload = function (){
+    onResize()
+  }
+
+  function onResize(){
+    if (window.innerWidth > 791){
+      $('#body').css("overflow", "auto")
+    }
+  }
+
 </script>
 
 </html>
