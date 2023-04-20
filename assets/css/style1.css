@@ -672,7 +672,7 @@ body {
   /* justify-content: start; */
   align-items: center;
   padding: 0 90px;
-  /* margin: 0px auto auto; */
+  margin: 0px auto auto;
   gap: 80px;
 
 }
