@@ -69,6 +69,13 @@ var list_of_projects = [
         "title":"Smart City with Arduino",
         "github":"https://github.com/BenedettoSimone/SmartCity-Arduino",
         "paper":""
+    },
+    { "id":"10",
+        "cover": "assets/img/project-cover/ketocare-cover.jpg",
+        "topic":"Serverless Computing",
+        "title":"KetoCare",
+        "github":"https://github.com/BenedettoSimone/KetoCare",
+        "paper":""
     }
 
 ];
