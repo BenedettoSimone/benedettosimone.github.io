@@ -536,6 +536,9 @@ body {
   margin-top: -130px;
 }
 
+#hero .right-container img{
+  width: 480px;
+}
 
 #hero .name, #hero .hello {
   margin: 0;
@@ -589,22 +592,26 @@ body {
 
 
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1076px) {
   #hero .hello {
     font-size: 20px;
   }
 
   #hero .name{
-    font-size: 50px;
+    font-size: 55px;
   }
 
   #hero p {
     margin-top: 10px;
     font-size: 20px;
   }
+
+  #hero .right-container img{
+    width: 380px;
+  }
 }
 
-@media screen and (max-width: 830px){
+@media screen and (max-width: 917px){
   #hero {
     flex-direction: column-reverse;
     text-align: center;
@@ -654,6 +661,10 @@ body {
     font-size: 17px;
   }
 
+  #hero .right-container img{
+    width: 310px;
+  }
+
 }
 
 
@@ -666,14 +677,13 @@ body {
 --------------------------------------------------------------*/
 #about {
   max-width: 1440px;
-  height: 360px;
   position: relative;
   display: flex;
   /* justify-content: start; */
   align-items: center;
   padding: 0 90px;
-  margin: 0px auto auto;
   gap: 80px;
+  margin: 0 auto 110px;
 
 }
 
@@ -718,13 +728,13 @@ body {
   border: 0;
   border-radius: 11px;
   color: white;
-  width: 120px;
+  width: 106px;
   margin-top:25px;
 
 }
 
 
-@media screen and (max-width: 830px){
+@media screen and (max-width: 917px){
   #about {
     flex-direction: column;
     text-align: center;
